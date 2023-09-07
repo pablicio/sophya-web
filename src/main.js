@@ -10,7 +10,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import DxTreeView from 'devextreme-vue/tree-view';
 import MdRender from '@/components/MdRender';
-import SwaggerRender from '@/components/SwaggerRender';
 
 library.add(fas);
 
@@ -21,5 +20,4 @@ createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
 .component('dx-tree-view', DxTreeView)
 .component('md-render', MdRender)
-.component('swagger-render', SwaggerRender)
 .mount('#app')

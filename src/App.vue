@@ -23,9 +23,8 @@
         </div>
 
         <div class="col-9 content">
-          <swagger-render
-            :collection="'https://raw.githubusercontent.com/swagger-api/swagger-samples/master/java/inflector-dropwizard/src/main/swagger/swagger.yaml'" />
-          <!-- <md-render :source="sourceMd"></md-render> -->
+          <!-- <swagger-render :collection="'https://raw.githubusercontent.com/swagger-api/swagger-samples/master/java/inflector-dropwizard/src/main/swagger/swagger.yaml'" /> -->
+          <md-render :source="sourceMd"></md-render>
         </div>
       </div>
     </div>
