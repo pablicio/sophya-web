@@ -49,7 +49,7 @@ export default {
   mounted() {
     this.tree = this.$refs[this.treeViewRef];
 
-    fetch("http://192.168.33.11:8080/map_folder.json")
+    fetch("http://35.90.20.195:8080/map_folder.json")
       .then(response => response.json())
       .then(data => {
         this.items = data
@@ -77,7 +77,7 @@ export default {
       })
     },
     getMarkdowFile(currentItem) {
-      fetch(`http://192.168.33.11:8080${currentItem.path}/${currentItem.md_slug}`)
+      fetch(`http://35.90.20.195:8080${currentItem.path}/${currentItem.md_slug}`)
         .then(response => response.text())
         .then((mdText) => {
           this.sourceMd = mdText
